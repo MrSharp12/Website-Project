@@ -14,7 +14,7 @@ html {
     text-rendering: optimizeLegibility;
 }
 
-.clearfix {zoom: 1;}
+
 .clearfix:after {
     content: '.';
     clear: both;
