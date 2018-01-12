@@ -1,0 +1,214 @@
+/* --- Basic Setup ---- */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    color: #555;
+    font-family: 'arial', sans-serif;
+    font-weight: 300px;
+    font-size: 20px;
+    text-rendering: optimizeLegibility;
+}
+
+.clearfix {zoom: 1;}
+.clearfix:after {
+    content: '.';
+    clear: both;
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+
+/* ---- Resuable Elements ---- */
+
+row {
+    max-width: 1140px;
+    margin: auto 0;
+}
+
+section { padding: 80px 0;}
+
+.box {padding: 1%;}
+
+/* Paragraphs */
+
+.site-text {
+    line-height: 145%;
+    width: 70%;
+    margin-left: 15%;
+}
+
+.box p {
+    font-size: 90%;
+    line-height: 145%;
+}
+
+/* Headings */
+
+h1 {
+    font-weight: 300;
+    margin-top: 0;
+    margin-bottom: 20px;
+    color: black;
+    font-size: 240%; 
+    word-spacing: 4px;
+    letter-spacing: 1px;
+}
+
+h2 {
+    font-size: 180%;
+    word-spacing: 2px;
+    text-align: center;
+    margin-bottom: 30px;
+    letter-spacing: 1px;
+}
+
+/* --- Header  --- */
+
+header {
+    background-image: url("./img/Grazing_Header.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    background-attachment: fixed;
+}
+
+#openTextBox {
+    position: absolute;
+    width: 1140px;
+    top: 93%;
+    left: 86%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    padding-bottom: 25%;
+}
+
+/* Nav Bar*/
+.navTallow {
+    float: right;
+    list-style: none;
+    margin-top: 55px;
+}
+
+.navTallow li {
+    display: inline-block;
+    margin-left: 40px;
+    padding-right: 25px;
+}
+
+.navTallow li a:link,
+.navTallow li a:visited {
+    padding-bottom: 8px 0;
+    color: black;
+    text-decoration: none;
+    border-bottom: 2px solid transparent;
+    -webkit-transition: border-bottom 0.2s;
+    transition: border-bottom 0.2s;
+}
+
+.navTallow li a:hover,
+.navTallow li a:active {
+    border-bottom: 2px solid #eef104;
+}
+
+/* --- image break --- */
+
+.image-section {
+    padding: 0;
+}
+
+.images {
+    margin-top: 10px;
+    list-style: none;
+    width: 100%;
+}
+
+.images li {
+    display: block;
+    float: left;
+    width: 33.33%;
+}
+
+.image-photo {
+    width: 100%;
+    margin: 0;
+    overflow: hidden;
+    background-color: #000;
+}
+
+.image-photo img {
+    opacity: 0.7;
+    width: 100%;
+    height: auto;
+    -webkit-transform: scale(1.15);
+    -ms-transform: scale(1.15);
+    transform: scale(1.15);
+    -webkit-transition: -webkit-transform 0.5s, opacity 0.5s;
+    transition: transform 0.5s, opacity 0.5s;
+}
+
+.image-photo img:hover {
+    opacity: 1;
+    -webkit-transform: scale(1.04);
+    -ms-transform: scale(1.04);
+    transform: scale(1.04);
+}
+
+/* --- Products  --- */
+
+.aboutTag { padding-bottom: 45px;}
+
+.products { background-color: lightgrey; }
+
+.grid-wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 200px;
+    grid-auto-rows: minmax(100px, auto);
+    padding-left: 300px;
+}
+
+.tallowFeatures { 
+    padding-left: 20px; 
+    padding-top: 10px;
+}
+
+.dropDown { margin-top: 300px; }
+
+/* Footer */
+
+.footer {
+    background-color: #323232;
+    padding: 50px;
+    font-size: 90%;
+}
+
+.contactlist {
+    list-style: none;
+    float: right;
+}
+
+.contactList li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.contactList li a:link, 
+.contactList li a:link visited { 
+    text-decoration: none;
+    color: #888;
+} 
+
+.contactList li:hover,
+.contactList li:active,
+.contactList a:hover,
+.contactList a:active {
+    color: #ddd;
+}
+
+
+
