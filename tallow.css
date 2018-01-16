@@ -32,8 +32,6 @@ row {
 
 section { padding: 80px 0;}
 
-.box {padding: 1%;}
-
 /* Paragraphs */
 
 .site-text {
@@ -41,11 +39,6 @@ section { padding: 80px 0;}
     width: 70%;
     margin-left: 15%;
     
-}
-
-.box p {
-    font-size: 90%;
-    line-height: 145%;
 }
 
 /* Button */
@@ -111,7 +104,7 @@ nav {
     z-index: 1;
   }
 
-  .fixed-nav nav {
+.sticky-nav nav {
     position: fixed;
     box-shadow: 0.5px rgba(0, 0, 0, 0.1);
   }
@@ -140,7 +133,7 @@ li.logo {
   font-size: 30px;
 }
 
-.fixed-nav li.logo { max-width: 500px; }
+.sticky-nav li.logo { max-width: 500px; }
 
 
 li.logo a { color:black; }
@@ -230,7 +223,7 @@ input {
     height: 30px;
 }
 
-/* Footer */
+/* --- Footer --- */
 
 .footer {
     background-color: #252525;

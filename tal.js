@@ -1,4 +1,4 @@
-'use strict';
+'use strict'
 
 const NAV = document.querySelector('#mainNav');
 const TOP_NAV_BAR = NAV.offsetTop; //grabs top of the navbar on page load
@@ -9,10 +9,10 @@ let submitInfo = () => document.getElementById('cartCount').value = ++cartTotal;
 let stickyNav = ()  => {
     if(window.scrollY >= TOP_NAV_BAR) {
         document.body.style.paddingTop = NAV.offsetHeight + 'px';
-        document.body.classList.add('fixed-nav');
+        document.body.classList.add('sticky-nav');
     } else {
         document.body.style.paddingTop = 0; //this takes care of the extra space at top, prevents site from jumping up
-        document.body.classList.remove('fixed-nav');
+        document.body.classList.remove('sticky-nav');
     }
 }
 
