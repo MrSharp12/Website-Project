@@ -2,7 +2,7 @@
 
 const NAV = document.querySelector('#mainNav');
 const TOP_NAV_BAR = NAV.offsetTop; //grabs top of the navbar on page load
-// let scroll = new SmoothScroll('a[href*="#"]'); //links to smooth-scroll.js
+let scroll = new SmoothScroll('a[href*="#"]'); //links to smooth-scroll.js
 let cartTotal = 0;
 
 const submitInfo = () => document.getElementById('cartCount').value = ++cartTotal;
