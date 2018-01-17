@@ -95,8 +95,20 @@ header {
 
 /* --- Nav Bar --- */
 
+@keyframes leftSlide {
+    0% {
+      transform: translateX(-100%);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+
+
+
 nav {
-    background: black;
+    animation: .7s ease-out 0s 1 leftSlide;
+    background: rgb(39, 38, 38);
     top: 0;
     width: 100%;
     transition: all 0.5s;
@@ -144,7 +156,6 @@ nav a, #cartStyle {
   display: inline-block;
   color: white;
   transition: all 0.2s;
-  text-transform: uppercase;
 }
 
 .container {

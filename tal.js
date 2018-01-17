@@ -5,8 +5,8 @@ const TOP_NAV_BAR = NAV.offsetTop; //grabs top of the navbar on page load
 let scroll = new SmoothScroll('a[href*="#"]'); //links to smooth-scroll.js
 let cartTotal = 0;
 
-let submitInfo = () => document.getElementById('cartCount').value = ++cartTotal;
-let stickyNav = ()  => {
+const submitInfo = () => document.getElementById('cartCount').value = ++cartTotal;
+const stickyNav = ()  => {
     if(window.scrollY >= TOP_NAV_BAR) {
         document.body.style.paddingTop = NAV.offsetHeight + 'px';
         document.body.classList.add('sticky-nav');
