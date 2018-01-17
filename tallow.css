@@ -104,8 +104,6 @@ header {
     }
   }
 
-
-
 nav {
     animation: .7s ease-out 0s 1 leftSlide;
     background: rgb(39, 38, 38);
@@ -161,6 +159,7 @@ nav a, #cartStyle {
     padding-left: 20px;
 }
 
+#mainNav li a:hover { color: #035e00; }
 
 /* --- image break --- */
 
