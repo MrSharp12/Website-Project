@@ -106,13 +106,18 @@ header {
 
 nav {
     animation: .7s ease-out 0s 1 leftSlide;
-    background: rgb(39, 38, 38);
+    background: rgb(70, 68, 68);
     top: 0;
     width: 100%;
     transition: all 0.5s;
     position: relative;
     z-index: 1;
   }
+
+.lines {
+    border-left: 2px solid green;
+    height: 30px;
+}
 
 .sticky-nav nav {
     position: fixed;
